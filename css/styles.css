@@ -4,6 +4,29 @@ body {
   background-color: #ffffff;
 }
 
+img {
+  display: block;
+}
+
+/* Header */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-items {
+  display: flex;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
 /* Logo */
 .logo-web {
   color: #4d5ae5;
@@ -13,9 +36,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
-
-
 
 .logo-studio {
   color: #2e2f42;
@@ -28,6 +50,15 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.link {
+  padding: 24px 0;
 }
 
 .link:hover {
@@ -45,6 +76,11 @@ body {
   font-style: normal;
 }
 
+.address-item {
+  display: flex;
+  gap: 40px;
+}
+
 .link-address {
   color: #434455;
   font-size: 16px;
@@ -52,7 +88,6 @@ body {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  
 }
 
 .link-address:hover {
@@ -66,6 +101,7 @@ body {
 /* Section-one */
 .section-one {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .title-effective {
@@ -74,6 +110,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  max-width: 496px;
 }
 
 .button-order {
@@ -85,6 +122,11 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 
 .button-order:hover {
@@ -97,12 +139,22 @@ body {
 
 /* Section-two */
 
+.title-advantages {
+  visibility: hidden;
+}
+
+.list-item-advantages {
+  display: flex;
+  gap: 24px;
+}
+
 .title-section-two {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .item-section-two {
@@ -110,14 +162,16 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 /* Section-trhee */
 
 .section-three {
-  background-color: #F4F4FD;
+  background-color: #f4f4fd;
+  padding: 120px 0;
 }
- 
+
 .title-team {
   font-size: 36px;
   line-height: 1.11;
@@ -125,10 +179,13 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .list-team {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .title-section-three {
@@ -137,6 +194,13 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.list-our-team {
+  display: flex;
+  gap: 24px;
 }
 
 .list-item-team {
@@ -144,9 +208,36 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: center;
+}
+
+.name-employee-position {
+  padding: 32px 0;
 }
 
 /* Section-four */
+
+.section-four {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.list-our-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.list-item-our-portfolio {
+  width: calc((100% - 48px) / 3);
+}
+
+.application-names-categories {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 
 .title-portfolio {
   font-size: 36px;
@@ -155,6 +246,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .title-section-four {
@@ -163,6 +255,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .list-item-portfolio {
@@ -176,6 +269,7 @@ body {
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .logo-web {
@@ -186,6 +280,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-studio-footer {
@@ -194,6 +290,7 @@ body {
 
 .list-item-footer {
   line-height: 1.5;
-  color: #F4F4FD;
-  letter-spacing: 0.02em
+  color: #f4f4fd;
+  letter-spacing: 0.02em;
+  max-width: 264px;
 }
