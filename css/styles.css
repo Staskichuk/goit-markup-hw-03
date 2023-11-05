@@ -12,11 +12,9 @@ img {
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
-
-.header-items {
+.headeritem {
   display: flex;
 }
-
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -139,8 +137,23 @@ img {
 
 /* Section-two */
 
-.title-advantages {
-  visibility: hidden;
+.section-two {
+  padding: 120px 0;
+}
+
+.list-section-two {
+  width: calc((100% - 72px) / 4);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .list-item-advantages {
