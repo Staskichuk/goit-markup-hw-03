@@ -236,6 +236,13 @@ img {
   padding: 32px 0;
 }
 
+.position-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Section-four */
 
 .section-four {
