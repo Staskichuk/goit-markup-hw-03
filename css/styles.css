@@ -233,7 +233,6 @@ img {
 }
 
 .name-employee-position {
-  padding: 32px 0;
 }
 
 .position-three {
@@ -241,6 +240,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 32px 0;
 }
 
 /* Section-four */
@@ -264,7 +264,9 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
-.application-names-categories {
+.list-item-our-portfolio {
+}
+.categories-four {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
